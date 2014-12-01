@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Loguear</servlet-name>
+        <servlet-class>Login.Loguear</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ValidarReq</servlet-name>
+        <servlet-class>Requerimientos.ValidarReq</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JQInvenCiclico</servlet-name>
+        <servlet-class>Insumo.JQInvenCiclico</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Maximos</servlet-name>
+        <servlet-class>Insumo.Maximos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Loguear</servlet-name>
+        <url-pattern>/Loguear</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidarReq</servlet-name>
+        <url-pattern>/ValidarReq</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JQInvenCiclico</servlet-name>
+        <url-pattern>/JQInvenCiclico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Maximos</servlet-name>
+        <url-pattern>/Maximos</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

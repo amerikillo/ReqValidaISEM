@@ -1,0 +1,32 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span clss="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="main_menu.jsp">Inicio</a>
+        </div>
+        <div class="navbar-collapse collapse"><ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Requerimientos<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="main_menu.jsp"  onclick="">Ver Requerimientos</a></li>
+                        <li><a href="adminMaximos.jsp"  onclick="">Administra Máximos</a></li>
+                        <!--li><a href="#"  onclick="window.open('verDevolucionesEntrada.jsp', '', 'width=1200,height=800,left=50,top=50,toolbar=no')">Imprimir Devoluciones</a></li>
+                        <li><a href="#"  onclick="window.open('devolucionesInsumo.jsp', '', 'width=1200,height=800,left=50,top=50,toolbar=no')">Devolver</a></li-->
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> <%=usua%></a></li>
+                <li class="active"><a href="index.jsp"><span class="glyphicon glyphicon-log-out"></span></a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
